@@ -10,21 +10,5 @@ export class AppController {
     constructor(private readonly appService: AppService) {}
 
     @Get('/')
-    async getHello(@Res() res: Response) {
-        /*
-        const bufferIndexHtml = fs.readFileSync('index.html');
-        res.type('text/html').send(bufferIndexHtml);
-        
-        //console.log(path.resolve(__dirname, '../client/build'));
-        res.sendFile(
-            '/Users/ertugdilek/Desktop/intelistyle/intelistyle_backend/build',
-            'index.html',
-        );
-        */
-
-        const bufferIndexHtml = fs.readFileSync(
-            '/Users/ertugdilek/Desktop/intelistyle/intelistyle_backend/build/index.html',
-        );
-        res.type('text/html').send(bufferIndexHtml);
-    }
+    async getHello(@Res() res: Response) {}
 }

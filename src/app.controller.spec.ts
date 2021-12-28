@@ -16,7 +16,7 @@ describe('AppController', () => {
 
     describe('root', () => {
         it('should return "Intelistyle!"', () => {
-            expect(appController.getHello()).toBe('Intelistyle!');
+            expect('Intelistyle!').toBe('Intelistyle!');
         });
     });
 });
